@@ -1,0 +1,78 @@
+.main-login-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0F4F9;
+}
+.login-container{
+  display: flex;
+  justify-content: baseline;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: 50%;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.left-part{
+  width: 100%;
+  align-items: start;
+}
+.left-part h1{
+  padding-top: 4%;
+  font-size: 30px;
+}
+
+.left-part p{
+  font-size: 15px;
+}
+
+.submit-form{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+}
+
+.right-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height:100%;
+}
+.right-upper{
+  display:flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.password-options{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-effect{
+  display: flex;
+  justify-content: end;
+}
+
+.btn-sigin{
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.lowerportion-login{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transparent-select {
+  background: transparent;
+  border: none;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+
+  <div class="header">
+    <app-header (toggleNavbar)="toggleNavbar()"></app-header>
+  </div>
+
+  <div class="main-container">
+    <div class="sidenav">
+      <app-side-nav [isNavbarOpen]="isNavbarOpen"></app-side-nav>
+    </div>
+
+    <div class="main" [style.margin-left.px]="isNavbarOpen ? -200 : 0" [class.start]="isNavbarOpen">
+      <app-main></app-main>
+    </div>
+  </div>
+</div>

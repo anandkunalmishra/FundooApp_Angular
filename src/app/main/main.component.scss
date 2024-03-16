@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upper-section{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  width: 60%;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 1px 1px 1px 6px;
+  min-height: 28px;
+}
+
+.setting-logo{
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  gap: 5px;
+}
+
+button{
+  width:40px;
+  height:35px;
+  border-radius: 40%;
+  border: 0;
+  background: transparent;
+}
+
+.search{
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  caret-color: black;
+  color: black;
+  width: 100%;
+}
+
+.search::placeholder{
+  color: black;
+}
+
+button:hover{
+  background-color: #f1f3f4;
+}

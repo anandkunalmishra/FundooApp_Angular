@@ -15,6 +15,13 @@ import {MatSelectModule} from '@angular/material/select';
 import {ReviewloginComponent } from './reviewlogin/reviewlogin.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './Services/auth/auth.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { ToolExecuteComponent } from './tool-execute/tool-execute.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -24,7 +31,12 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     RegisterComponent,
     ForgetpasswordComponent,
     ResetpasswordComponent,
-    ReviewloginComponent
+    ReviewloginComponent,
+    DashboardComponent,
+    HeaderComponent,
+    SideNavComponent,
+    ToolExecuteComponent,
+    MainComponent
 
   ],
   imports: [
@@ -37,11 +49,13 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

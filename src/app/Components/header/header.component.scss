@@ -64,10 +64,12 @@ button{
   border-radius: 50%;
   border: 0;
   background: transparent;
+  color: #757575;
 }
 
 button:hover{
   background-color: #f1f3f4;
+  color: black;
 }
 
 .material-symbols-outlined{
@@ -76,4 +78,7 @@ button:hover{
 
 .user{
   cursor: pointer;
+}
+#apps{
+  color:#5f6367;
 }

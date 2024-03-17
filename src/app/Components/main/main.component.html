@@ -1,0 +1,30 @@
+<div class="container">
+  <div *ngIf="!showElseBlock" class="upper-section">
+    <input type="text" class="search" placeholder="Take a note..." (click)="toggleBlock()">
+    <div class="setting-logo">
+      <button class="material-symbols-outlined" id="check1">check_box</button>
+      <button class="material-symbols-outlined">brush</button>
+      <button class="material-symbols-outlined" id="image">image</button>
+    </div>
+  </div>
+
+  <div *ngIf="showElseBlock" class="upper-section-change">
+    <div class="top-title">
+      <input type="text" class="search" placeholder="Title" id="Title">
+      <button class="material-symbols-outlined" id="check2">keep</button>
+    </div>
+    <textarea class="search" placeholder="Take a note..." id="inner-title"></textarea>
+    <div class="lower">
+      <div class="controls">
+        <app-tool-execute></app-tool-execute>
+        <button class="material-symbols-outlined" id="undo">undo</button>
+        <button class="material-symbols-outlined" id="redo">redo</button>
+      </div>
+      <button mat-button (click)="toggleBlock()" id="close">Close</button>
+    </div>
+  </div>
+
+  <div class="notes">
+    <app-notes></app-notes>
+  </div>
+</div>

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
-import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
-import { ReviewloginComponent } from './reviewlogin/reviewlogin.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './Components/login/login.component';
+import { RegisterComponent } from './Components/register/register.component';
+import { ForgetpasswordComponent } from './Components/forgetpassword/forgetpassword.component';
+import { ResetpasswordComponent } from './Components/dashboard/resetpassword/resetpassword.component';
+import { ReviewloginComponent } from './Components/reviewlogin/reviewlogin.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},

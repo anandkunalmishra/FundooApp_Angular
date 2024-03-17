@@ -2,26 +2,28 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
-import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { LoginComponent } from './Components/login/login.component';
+import { RegisterComponent } from './Components/register/register.component';
+import { ForgetpasswordComponent } from './Components/forgetpassword/forgetpassword.component';
+import { ResetpasswordComponent } from './Components/dashboard/resetpassword/resetpassword.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
-import {ReviewloginComponent } from './reviewlogin/reviewlogin.component';
+import {ReviewloginComponent } from './Components/reviewlogin/reviewlogin.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './Services/auth/auth.service';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeaderComponent } from './header/header.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { ToolExecuteComponent } from './tool-execute/tool-execute.component';
-import { MainComponent } from './main/main.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { SideNavComponent } from './Components/side-nav/side-nav.component';
+import { ToolExecuteComponent } from './Components/tool-execute/tool-execute.component';
+import { MainComponent } from './Components/main/main.component';
+import { NotesComponent } from './Components/notes/notes.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { MainComponent } from './main/main.component';
     HeaderComponent,
     SideNavComponent,
     ToolExecuteComponent,
-    MainComponent
+    MainComponent,
+    NotesComponent
 
   ],
   imports: [
@@ -50,7 +53,8 @@ import { MainComponent } from './main/main.component';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTooltipModule
   ],
   providers: [
     provideClientHydration(),
